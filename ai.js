@@ -371,8 +371,8 @@ function checkwin(id) {
 	if((count == 5) && (f == 0)) {
 		document.getElementById("d_1").innerHTML = "Draw";
 
-	document.getElementById("b_1").style = "background-color:green;"
-	document.getElementById("b_1").setAttribute('onclick', 'refresh()');
+		document.getElementById("b_1").style = "background-color:green;"
+		document.getElementById("b_1").setAttribute('onclick', 'refresh()');
 		draws++;
 	}
 }
