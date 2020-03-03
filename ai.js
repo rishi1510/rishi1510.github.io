@@ -373,6 +373,7 @@ function checkwin(id) {
 
 		document.getElementById("b_1").style = "background-color:green;"
 		document.getElementById("b_1").setAttribute('onclick', 'refresh()');
+
 		draws++;
 	}
 }
