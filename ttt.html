@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<script src="app.js">
+	</script>
+	<style type="text/css">
+		.grid {
+			width: 500px;
+			text-align: center;
+			margin: auto;
+			font-size: 50px;
+		}
+		.result {
+			font-size: 50px;
+			text-align: center;
+			height: 50px;
+			padding: 15px;
+			margin: auto;
+		}
+
+		.button {
+		  background-color: green;
+		  border-radius: 20px;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  float: right;
+		  font-size: 20px;
+ 		}
+
+ 		.Unclicked {
+ 			background-color: grey;
+		  	border-radius: 20px;
+			color: white;
+		 	padding: 15px 32px;
+		 	text-align: center;
+		  	float: right;
+		  	font-size: 20px;
+ 		}
+
+ 		.title {
+ 			background-color: lightgrey;
+ 			border-radius: 10px;
+ 			box-sizing: border-box;
+ 			padding: 20px;
+ 			text-align: center;
+ 			font-size: 25px;
+ 			font-family: Calibri;
+ 		}
+	</style>
+</head>
+<body background="bg.png">
+	<div id="d_2" class= "title"><b>Vs Player</b></div> 
+
+	<div id="d_1" class="result"></div>
+
+	<table class="grid" cellpadding="60px">
+		<tr>
+			<td id="c_1" onclick="play('c_1')" style="border-right: 1px solid;border-bottom: 1px solid;">&nbsp &nbsp</td>
+			<td id="c_2" onclick="play('c_2')" style="border-right: 1px solid;border-bottom: 1px solid;border-left: 1px solid;">&nbsp &nbsp</td>
+			<td id="c_3" onclick="play('c_3')" style="border-left: 1px solid;border-bottom: 1px solid;" >&nbsp &nbsp</td>
+		</tr>
+		<tr>
+			<td id="c_4" onclick="play('c_4')" style="border-right: 1px solid;border-bottom: 1px solid;border-top: 1px solid;">&nbsp</td>
+			<td id="c_5" onclick="play('c_5')" style="border: 1px solid;">&nbsp</td>
+			<td id="c_6" onclick="play('c_6')" style="border-left: 1px solid;border-bottom: 1px solid;border-top: 1px solid;">&nbsp</td>
+		</tr>
+		<tr>
+			<td id="c_7" onclick="play('c_7')" style="border-right: 1px solid;border-top: 1px solid;">&nbsp</td>
+			<td id="c_8" onclick="play('c_8')" style="border-right: 1px solid;border-left: 1px solid;border-top: 1px solid;">&nbsp</td>
+			<td id="c_9" onclick="play('c_9')" style="border-left: 1px solid;border-top: 1px solid;">&nbsp</td>
+		</tr>
+	</table>
+	<input type="button" class="Unclicked" id="b_1" value="Rematch" onclick="">
+	<input type="button" class="button" id="b_2" value="Score" onclick="checkscore()">
+	<input type="button" class="button" id="b_3" value="Go Back" onclick="location.href='index.html'">
+</body>
+</html>
