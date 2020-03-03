@@ -371,10 +371,7 @@ function checkwin(id) {
 	if((count == 5) && (f == 0)) {
 		document.getElementById("d_1").innerHTML = "Draw";
 
-		document.getElementById("b_1").style = "background-color:green;"
-		document.getElementById("b_1").setAttribute('onclick', 'refresh()');
-
-		draws++;
+	win(0);
 	}
 }
 
@@ -383,15 +380,18 @@ function win(score) {
 		document.getElementById("c_" + i).onclick = "";
 	}
 
-	document.getElementById("b_1").style = "background-color:green;"
+	document.getElementById("b_1").setAttribute('class', 'button');
 	document.getElementById("b_1").setAttribute('onclick', 'refresh()');
 
 	f=1;
 	if (score == 1) {
 		p_1score++;
 	}
-	else {
+	else if(score == -1) {
 		p_2score++;
+	}
+	else {
+		draws++;
 	}
 }
 
@@ -428,7 +428,7 @@ function refresh() {
 		document.getElementById("c_9").setAttribute('style', 'border-left: 1px solid; border-top: 1px solid;' );
 
 		document.getElementById("b_1").value = "Rematch";
-		document.getElementById("b_1").style = "background-color:grey;";
+		document.getElementById("b_1").setAttribute('class', 'Unclicked');
 		document.getElementById("b_1").setAttribute('onclick', '');
 
 
