@@ -197,7 +197,7 @@ function comp(id) {
 				}
 			}
 			if (flag == 0) {
-				for(i=0; i<9; i++) {
+				for(i=0; i<9; i+=2) {
 					if(arr[i] == 0) {
 						document.getElementById('c_' + (i+1)).innerHTML = 'O';
 						document.getElementById('c_' + (i+1)).onclick = "";
